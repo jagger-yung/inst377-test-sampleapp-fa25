@@ -1,5 +1,5 @@
 async function loadCustomerData() {
-    await fetch('http://localhost:3000/customers')
+    await fetch("http://localhost:3000/customers")
     .then((result) => result.json())
     .then((resultJson) => {
         const table = document.createElement('table');
