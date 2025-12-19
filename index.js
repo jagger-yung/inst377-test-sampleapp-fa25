@@ -17,7 +17,7 @@ const supabaseKey = process.env.SUPABASE_KEY;
 const supabase = supabaseClient.createClient(supabaseUrl, supabaseKey);
 
 app.get('/', (req, res) => {
-    res.sendFile('public/Customers.html', {root: __dirname});
+    res.sendFile('public/customers.html', {root: __dirname});
 });
 
 app.get('/customers', async (req, res) => {
