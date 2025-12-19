@@ -2,9 +2,9 @@ async function loadCustomerData() {
     await fetch('/customers')
     .then((result) => result.json())
     .then((resultJson) => {
-        const table = document.createElement('table')
+        const table = document.createElement('table');
+        const tableRow = document.createElement('tr');
 
-        const tableRow = document.createElement('tr')
         const tableHeadingFirstName = document.createElement('th');
         tableHeadingFirstName.innerHTML = 'First Name';
 
